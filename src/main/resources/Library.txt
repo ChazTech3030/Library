@@ -1,0 +1,16 @@
+Mag,007,New Scientist,2018-1-1,Science,Emily Wilson
+Mag,008,New Scientist,2018-2-1,Science,Emily Wilson
+Mag,009,New Scientist,2018-3-1,Science,Emily Wilson
+Mag,010,New Scientist,2018-4-1,Science,Emily Wilson
+Mag,011,New Scientist,2018-5-1,Science,Emily Wilson
+Mag,012,New Scientist,2018-6-1,Science,Emily Wilson
+Book,001,Theory of Everything,2000-1-23,Stephen Hawking,Science
+Book,002,Theory of Evolution,1860-4-24,Charles Darwin,Science
+Book,003,Thoery of Relativity,1900-12-30,Albert Einstein,Science
+Book,004,Storm Front,2000-4-1,Jim Butcher,Fantasy
+Book,005,Fool Moon,2001-1-1,Jim Butcher,Fantasy
+Book,006,Grave Peril,2001-9-1,Jim Butcher,Fantasy
+Mag,013,PC Gamer,2009-6-1,Gaming,Phil Savage
+Mag,014,PC Gamer,2010-6-1,Gaming,Evan Lahti
+Thesis,015,The Principle of Least Action in Quantum Mechanics,1942-8-4,Quantum Mechanics,Richard Feynman
+Thesis,016,Properties of Expanding Universes,1966-9-30,Spacetime,Stephen Hawking
