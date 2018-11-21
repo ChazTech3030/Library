@@ -7,21 +7,22 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 public class AddIndividually {
-	@Test
-	public void newBook() {
-		Book book = new Book(001,"On the Origin of Species",LocalDate.of(1850, 1, 1),"Charles Darwin","Science");
-		assertEquals("Insert a new book", "Charles Darwin",book.getAuthor());
-	}
-	@Test
-	public void newMag() {
-		Magazine mag = new Magazine(007,"New Scientist",LocalDate.of(2018, 1, 1),"Science","Emily Wilson");
-		assertEquals("Insert a new book", "Emily Wilson",mag.getEditor());
-	}
-	@Test
-	public void newThesis() {
-		Book book = new Book(001,"On the Origin of Species",LocalDate.of(1850, 1, 1),"Charles Darwin","Science");
-		assertEquals("Insert a new book", "Charles Darwin",book.getAuthor());
-	}
+	
+//	@Test
+//	public void newBook() {
+//		Book book = new Book(001,"On the Origin of Species",LocalDate.of(1850, 1, 1),"Charles Darwin","Science");
+//		assertEquals("Insert a new book", "Charles Darwin",book.getAuthor());
+//	}
+//	@Test
+//	public void newMag() {
+//		Magazine mag = new Magazine(007,"New Scientist",LocalDate.of(2018, 1, 1),"Science","Emily Wilson");
+//		assertEquals("Insert a new book", "Emily Wilson",mag.getEditor());
+//	}
+//	@Test
+//	public void newThesis() {
+//		Book book = new Book(001,"On the Origin of Species",LocalDate.of(1850, 1, 1),"Charles Darwin","Science");
+//		assertEquals("Insert a new book", "Charles Darwin",book.getAuthor());
+//	}
 	@Test
 	public void loadLibrary() {
 		LibraryStart library = new LibraryStart();

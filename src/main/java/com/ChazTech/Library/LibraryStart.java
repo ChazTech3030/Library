@@ -31,22 +31,17 @@ public class LibraryStart {
 				String[] dateData = lineData[3].split("-");
 				System.out.println("" + dateData[0] + ":" + dateData[1] + ":" + dateData[2]);
 				new Book(Integer.parseInt(lineData[1]),lineData[2],LocalDate.of(Integer.parseInt(dateData[0]), Integer.parseInt(dateData[1]), Integer.parseInt(dateData[2])),lineData[4],lineData[5]);
-			} else {
-				if (lineData[0].equals("Mag")) {
-					String[] dateData = lineData[3].split("-");
-					System.out.println("" + dateData[0] + ":" + dateData[1] + ":" + dateData[2]);
-					new Magazine(Integer.parseInt(lineData[1]),lineData[2],LocalDate.of(Integer.parseInt(dateData[0]), Integer.parseInt(dateData[1]), Integer.parseInt(dateData[2])),lineData[4],lineData[5]);
-				} else {
-					if (lineData[0].equals("Thesis")) {				
-						String[] dateData = lineData[3].split("-");
-						System.out.println("" + dateData[0] + ":" + dateData[1] + ":" + dateData[2]);
-						new Thesis(Integer.parseInt(lineData[1]),lineData[2],LocalDate.of(Integer.parseInt(dateData[0]), Integer.parseInt(dateData[1]), Integer.parseInt(dateData[2])),lineData[4],lineData[5]);
-					} else {
-						System.out.println("DIDNOTPARSE");
-					}
-				}
 			}
-
+			if (lineData[0].equals("Mag")) {
+				String[] dateData = lineData[3].split("-");
+				System.out.println("" + dateData[0] + ":" + dateData[1] + ":" + dateData[2]);
+				new Magazine(Integer.parseInt(lineData[1]),lineData[2],LocalDate.of(Integer.parseInt(dateData[0]), Integer.parseInt(dateData[1]), Integer.parseInt(dateData[2])),lineData[4],lineData[5]);
+			}
+			if (lineData[0].equals("Thesis")) {				
+				String[] dateData = lineData[3].split("-");
+				System.out.println("" + dateData[0] + ":" + dateData[1] + ":" + dateData[2]);
+				new Thesis(Integer.parseInt(lineData[1]),lineData[2],LocalDate.of(Integer.parseInt(dateData[0]), Integer.parseInt(dateData[1]), Integer.parseInt(dateData[2])),lineData[4],lineData[5]);
+			}
 		}
 		inF.close();
 		for (int i = 0; i < Item.libraryContents.size(); i++) {
@@ -55,6 +50,11 @@ public class LibraryStart {
 			System.out.println(Item.libraryContents.get(i).getName());
 			System.out.println(Item.libraryContents.get(i).getPublishedDate());
 			System.out.println(Item.libraryContents.get(i).getLoanTime());
+			if (Item.libraryContents.get(i) instanceof Book) {
+				Book book = (Book) Item.libraryContents.get(i);
+				book.getGenre();
+				
+			}
 		}
 	}
 	
