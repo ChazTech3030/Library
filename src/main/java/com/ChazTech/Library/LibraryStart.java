@@ -52,8 +52,7 @@ public class LibraryStart {
 			System.out.println(Item.libraryContents.get(i).getLoanTime());
 			if (Item.libraryContents.get(i) instanceof Book) {
 				Book book = (Book) Item.libraryContents.get(i);
-				book.getGenre();
-				
+				System.out.println(book.getGenre());
 			}
 		}
 	}
